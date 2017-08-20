@@ -1,0 +1,18 @@
+[Desktop Entry]
+Comment=Konqi Desktop Design by SatoSawa
+
+Encoding=UTF-8
+Keywords=Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;
+Name=Konqi
+Type=Service
+
+X-KDE-ServiceTypes=Plasma/LookAndFeel
+X-KDE-ParentApp=
+X-KDE-PluginInfo-Author=SatoSawa
+X-KDE-PluginInfo-Category=
+X-KDE-PluginInfo-Email=satosawa93@gmail.com
+X-KDE-PluginInfo-License=GPLv2+
+X-KDE-PluginInfo-Name=hkg.sawa.konqi.desktop
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=
+X-Plasma-MainScript=defaults
