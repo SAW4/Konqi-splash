@@ -6,6 +6,37 @@
  */
 
 import QtQuick 2.7
+import QtQuick.Window 2.7
+// Window {
+//     id: splash
+//     color: "transparent"
+//     title: "Splash Window"
+//     modality: Qt.ApplicationModal
+//     flags: Qt.SplashScreen
+//     property int timeoutInterval: 2000
+//     signal timeout
+//     x: (Screen.width - splashImage.width) / 2
+//     y: (Screen.height - splashImage.height) / 2
+//     width: splashImage.width
+//     height: splashImage.height
+// 
+//     Image {
+//         id: splashImage
+//             source: "images/konqi.svgz"
+//         MouseArea {
+//             anchors.fill: parent
+//             onClicked: Qt.quit()
+//         }
+//     }
+//     Timer {
+//         interval: timeoutInterval; running: true; repeat: false
+//         onTriggered: {
+//             visible = false
+//             splash.timeout()
+//         }
+//     }
+//     Component.onCompleted: visible = true
+// }
 
 Rectangle {
     id: root
@@ -39,10 +70,9 @@ Rectangle {
 
         Image {
             id: konqi_logo
-            property real size: units.gridUnit * 32
+            property real size: units.gridUnit * 16
             anchors.centerIn: parent
             source: "images/konqi.svgz"
-            sourceSize.width: size
             sourceSize.height: size           
         }        
                 
@@ -53,8 +83,8 @@ Rectangle {
             y: (parent.height - konqi_logo.y) + 10
             anchors.horizontalCenter: parent.horizontalCenter
             source: "images/busy.svg"
-            sourceSize.height: units.gridUnit * 5
-            sourceSize.width: units.gridUnit * 5
+            sourceSize.height: units.gridUnit * 3
+            sourceSize.width: units.gridUnit * 3
             RotationAnimator on rotation {
                 id: rotationAnimator
                 from: 0
